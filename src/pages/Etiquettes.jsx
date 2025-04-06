@@ -1,41 +1,42 @@
 import React from "react";
 
 const Etiquettes = () => {
+  const basePath = import.meta.env.BASE_URL;
+
   return (
-    <div className="etiquette-container">
+    <div className="etiquette-container" style={{ textAlign: "center", padding: "20px" }}>
       
-      {/* Conteneur du texte bien centré */}
       <div className="etiquette-text">
         <h1 className="text-3xl font-bold mb-4">Exemples d'étiquettes personnalisées</h1>
-        <p className="text-lg">Voici des exemples de visuels pour les étiquettes.</p>
+        <p className="text-lg mb-6">Voici des exemples de visuels pour les étiquettes.</p>
       </div>
 
-      {/* Conteneur des images bien centré */}
-      <div className="etiquette-images">
+      <div className="etiquette-images" style={{ display: "flex", justifyContent: "center", gap: "40px", flexWrap: "wrap" }}>
         <div>
           <img
-            src="/MOCKUP_MINES_CAN_33cl_PACKSHOT_V1.png"
+            src={`${basePath}Etiquette_V1.png`}
             alt="WildMines"
-            className="etiquette-img"
+            style={{ width: "1000px", maxWidth: "80%", borderRadius: "10px" }}
           />
           <h2 className="mt-2 font-semibold text-xl">WildMines</h2>
         </div>
 
         <div>
           <img
-            src="/MOCKUP_MINES_CAN_33cl_PACKSHOT_V2.png"
+            src={`${basePath}Etiquette_V2.png`}
             alt="DarkMines"
-            className="etiquette-img"
+            style={{ width: "1000px", maxWidth: "80%", borderRadius: "10px" }}
           />
           <h2 className="mt-2 font-semibold text-xl">DarkMines</h2>
         </div>
       </div>
-
     </div>
   );
 };
 
 export default Etiquettes;
+
+
 
 
 

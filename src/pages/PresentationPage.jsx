@@ -2,6 +2,7 @@ import React from "react";
 import "./PresentationPage.css"; // Import du fichier CSS
 
 const PresentationPage = () => {
+  const basePath = import.meta.env.BASE_URL || "";
   return (
     <div className="presentation-container">
       <h1>Présentation du Projet</h1>
@@ -29,7 +30,11 @@ const PresentationPage = () => {
 
         {/* Section Images */}
         <div className="image-section">
-          <img src="/affiche.png" alt="Présentation du projet" />
+        <img
+           src={`${basePath}affiche.png`}
+           alt="affiche"
+           style={{ width: "50%", borderRadius: "10px", marginTop: "20px" }}
+        />
         </div>
       </div>
 
