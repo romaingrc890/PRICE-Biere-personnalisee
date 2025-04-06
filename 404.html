@@ -2,15 +2,17 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <script>
-      // Redirige vers la base path + l’URL demandée
-      const redirectTo = location.origin + import.meta.env.BASE_URL;
-      location.replace(redirectTo);
-    </script>
+    <meta http-equiv="refresh" content="0; url=/PRICE-Biere-personnalisee/" />
     <title>Redirection...</title>
   </head>
   <body>
-    <p>Redirection en cours...</p>
+    <p>Redirection en cours vers l’accueil…</p>
+    <script>
+      // Redirige vers l'index avec le chemin demandé en hash pour React Router
+      const redirectPath = location.pathname.replace("/PRICE-Biere-personnalisee", "");
+      location.replace("/PRICE-Biere-personnalisee/#" + redirectPath);
+    </script>
   </body>
 </html>
+
 
