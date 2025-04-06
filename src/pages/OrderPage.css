@@ -1,0 +1,137 @@
+.order-form h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .order-form input,
+  .order-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .order-form textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  .info-message {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #fff3cd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+/* Appliquer le style au conteneur principal */
+.order-container {
+    background-color: transparent !important; /* Empêche tout fond blanc */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Style du formulaire */
+  .order-form {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px; /* Largeur fixe pour un bon alignement */
+  }
+  
+  /* Style des inputs */
+  .order-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style du bouton */
+  .order-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .promo-message {
+    font-size: 16px;
+    color: #d9534f; /* Rouge pour attirer l'attention */
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffebcc; /* Jaune clair pour mettre en avant */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .price-breakdown {
+    background-color: #fff7e6;
+    border: 1px solid #ffd591;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .price-display {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60; /* Vert pour montrer le prix */
+    text-align: center;
+    margin-top: 10px;
+    background-color: #eafaf1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+    
+  
+  .order-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .beer-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .beer-selection button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .beer-selection button:hover {
+    background-color: #ffcc00; /* Couleur dorée pour le survol */
+  }
+  
+  .beer-selection button.selected {
+    background-color: #ff9900; /* Couleur orange foncé pour montrer la sélection */
+    color: white;
+    font-weight: bold;
+    transform: scale(1.05);
+  }
+  

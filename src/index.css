@@ -1,0 +1,49 @@
+body {
+    background-color: #F5CC93 !important; /* Appliquer la couleur partout */
+    color: black; /* Ajuster le texte pour qu'il soit bien lisible */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+
+/* Assurer que tout le contenu est centré et que les images ne débordent pas */
+.etiquette-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Hauteur totale de l'écran */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Forcer une largeur raisonnable pour le texte */
+.etiquette-text {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Centrer et limiter la taille des images */
+.etiquette-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px; /* Empêcher les images de s'étaler trop */
+  width: 100%;
+}
+
+.etiquette-img {
+  width: 100%;
+  max-width: 800px; /* Taille max des images */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+  
+  
+  
+  

@@ -1,0 +1,33 @@
+/* Bouton du menu burger */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 20px; /* Ajuste selon le besoin */
+  top: 20px;
+  z-index: 1000; /* S'assurer qu'il est bien au-dessus */
+}
+
+/* Bouton burger : trois barres */
+.bm-burger-bars {
+  background: #007bff; /* Couleur du bouton */
+}
+
+/* Arrière-plan du menu */
+.bm-menu {
+  background: #373a47;
+  padding: 2em 1.5em;
+}
+
+/* Liens dans le menu */
+.menu-item {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+  
+  
+  
